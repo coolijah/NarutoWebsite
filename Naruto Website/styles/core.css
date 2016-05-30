@@ -1,0 +1,15 @@
+
+body { background-color:#E69400; }
+
+#footer { padding: 6px 0px 6px;
+	background-color:#262626;
+	text-align: center;
+	font-size:87%;
+	color:#949494;
+	border-top: 10px solid #121212; 
+	font-family:arial,sans-serif; 
+	width:1100;
+	border-bottom: 10px solid #121212; }
+
+strong { color: yellow;
+              font-size:15px; }

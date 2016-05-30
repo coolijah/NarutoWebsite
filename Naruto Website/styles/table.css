@@ -1,0 +1,95 @@
+ table#index { width: 1100;
+	      padding: 1px; }
+
+ table.main { width:100%;
+	    padding:5px; 
+	    border:0; }
+
+ table.themes { width:60%;
+	text-align:center;
+	border-collapse:collapse; }
+
+.themestd { border:3px;
+	border-style:solid;
+	border-color:black;
+	padding:3px;
+	font-family: arial,sans-serif; 
+	font-size:15px; }
+
+.themesth {  border:3px;
+	border-style:solid;
+	border-color:black;
+	background-color:00BFFF;
+	padding:3px;
+	font-family: arial,sans-serif; 
+	font-size:15px;  }
+
+ .index { padding:20px; }
+
+
+
+
+
+
+
+			/* table for episode guides*/
+
+a.epi:link { background-color:orangered;
+       color:white;
+       font-family:arial;
+       font-size:20px;
+       text-align:center;
+       text-decoration:none; }
+
+a.epi:hover { background-color:orangered;
+       color:yellow;
+       font-weight:bold;
+       font-family:arial;
+       font-size:20px;
+       text-align:center;
+       text-decoration:underline; }
+
+a.epi:visited { background-color:orangered;
+       color:white;
+       font-family:arial;
+       font-size:20px;
+       text-align:center;
+       text-decoration:none; }
+
+th { background-color:orangered;
+       color:white;
+       font-family:arial;
+       font-size:20px;
+       text-align:center; }
+
+table.episodes { width:80%; }
+
+table.inner { width:100%;
+	   border-collapse:collapse;
+	   border-style:solid;
+	   border:0px; }
+
+td.division { width:50%; }
+
+.one { font-family:arial;
+           font-size:15;
+           background-color:DAA520;
+	   padding:3px;
+	   border-collapse:collapse;
+	   border-style:solid;
+	   border:0px;
+	   color:white; }
+
+.two { font-family: arial;
+           font-size: 15;
+           background-color:F0FFFF;
+	   padding:3px;
+	   border-collapse:collapse;
+	   border-style:solid;
+	   border:0px;}
+
+
+.subheadings1 { color:800000;
+	  font-family:Times New Roman,serif;
+	  font-size:35px;
+	  font-weight:bold; }	 

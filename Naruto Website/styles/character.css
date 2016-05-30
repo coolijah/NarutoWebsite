@@ -1,0 +1,63 @@
+ table.main { width: 100%;
+	    background-color:white; }
+
+ table.char { width:400;
+ 	    border-collapse:collapse; }
+
+ .headingtd { border:2px;
+	    text-align:center;
+	    background-color:800000;
+	    color:white;
+	    font-family: arial,sans-serif; 
+	    font-size:20px;
+	    font-weight:bold;
+	    font-style:italic;
+	    border-style:solid;
+	    border-color:black;
+	    padding:5px; }
+
+ .titletd {	border:2px;
+	 text-align:left;
+	background-color:FF4500;
+	font-family: arial,sans-serif; 
+	font-size:20px;
+	font-weight:bold;
+	border-style:solid;
+	border-color:black;
+	padding:5px;}
+
+ .infotd {	border:2px;
+	text-align:left;
+	background-color:FF8C00;
+	font-family: arial,sans-serif; 
+	font-size:18px;
+	border-style:solid;
+	border-color:black;
+	padding:5px; }
+
+ .maintd { padding:0px 30px 0px; }
+
+.par { font-family: arial,sans-serif; 
+          font-size:15px;
+          text-indent:40px;
+          text-align:justify;}
+
+/* exp personality */
+.subheadings1 { color:800000;
+	  font-family:Times New Roman,serif;
+	  font-size:35px;
+	  font-weight:bold;}	 
+
+/* exp. sharingan */
+.subheadings2 { color:darkred;
+	  font-family:Times New Roman,serif;
+	  font-size:25px;
+	  font-weight:bold; }
+
+/* exp. inline name formatting bold */
+.formatting { font-weight:bold; 
+	    font-style:italic; }
+
+/* exp. inline name formatting red */
+.formatting2 { color:red; 
+	    font-style:italic; }

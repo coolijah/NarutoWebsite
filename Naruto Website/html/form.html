@@ -1,0 +1,186 @@
+<html>
+<head>
+<title> Naruto HNU - Suggestions </title>
+<style type="text/css">
+
+#htmlForm td
+{
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:15px;
+    color:#CC3300;
+    border-bottom:1px #EAE3C8 solid;
+    padding:8px;
+}
+
+#formHeading
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:32px;
+    font-weight:bold;
+    color:#CC3300;
+    padding:10px;
+}
+
+textarea
+{
+resize: none;
+}
+
+.error
+{
+color:red;
+font-style:italic;
+font-size:12px;
+}
+
+.valid
+{
+color:green;
+font-style:italic;
+font-size:12px;
+}
+
+</style>
+
+	<script language="javascript">
+
+		function ifsubmit()
+		{
+		var answer=confirm("We will be submitting your comments and suggestions..\n\nDo you want to continue??");
+		if(answer==true)
+		{
+			alert("You have submitted your Comments and Suggestions.\n\nClick OK to continue.");
+		}
+		else
+		{
+			alert("Opps! Your files was corrupted.\nPlease fill-up again.");
+		}
+		}
+
+		function ifreset()
+		{
+			alert("You`ve just cleared all data..\n\nClick OK to proceed.");
+		}
+
+	</script>
+</head>
+
+<body>
+
+	<script language="javascript">
+
+//ageValidator
+		function agefunction()
+		{
+		try
+		{
+			var x=document.getElementById("x").value;
+			if(x==" ")     throw "<i><sup>ERROR!*This must be filled out!</sup></i>";
+			if(isNaN(x)) throw "<i><sup>ERROR!*Invalid characters!</sup></i>";
+			if(x<5)         throw "<i><sup>ERROR!*Invalid age! Too low!</sup></i>";
+			if(x>130)     throw "<i><sup>ERROR!*Invalid age! Too high!</sup></sub>";
+			if(x>=5 && x<=130)  throw  "<i><sup>*Valid age. You may now proceed.</sup></i>";
+		}
+		catch(err)
+		{
+			var y=document.getElementById("errorMsg");
+			y.innerHTML= err;
+		}
+		}
+
+//EmailValidator
+		function emailfunction()
+		{
+		try
+		{
+			var e=document.getElementById("e").value;
+			var atpos=e.indexOf("@");
+			var dotpos=e.lastIndexOf(".");
+			if(e==" ")     throw "<i><sup>ERROR!*This must be filled out! e.g. imbaGamer@yahoo.com</sup></i>";
+			if(atpos<1 || dotpos<atpos+2 || dotpos+2>e.length)     throw "<i><sup>ERROR!*Invalid E-mail! e.g. imbaGamer@yahoo.com</sup></i>";
+			if(atpos>=1 || dotpos>=atpos+2 || dotpos+2<=e.length)     throw "<i><sup>E-mail is available. You may now proceed.</sup></i>";
+
+		}
+		catch(err)
+		{
+			var e=document.getElementById("errorMsgg");
+			e.innerHTML= err;
+		}
+		}
+
+	</script>
+
+
+<table width="100%" border="0" cellpadding="5px" cellspacing="1px" bgcolor="#FFCC66"align="center" id="htmlForm">
+<tr bgcolor="#FFFFDD">
+<td width="2px" bgcolor="#FFCC66"></td>
+<td>
+<table align="center" border="0" width="100%" >
+
+<tr>
+<td colspan="2"><span id="formHeading">Suggestions</span></td>
+</tr>
+
+<tr>
+<td colspan="2"><b>Fill up the information below to send your suggestion and comments.</td>
+</tr>
+
+<tr>
+<td>
+
+	<form name="suggestion" onSubmit="return ifsubmit()" onReset="return ifreset()">
+
+
+ <b>First Name</td>
+<td><input type="text" size="32" maxlength="32" name="fname"></td>
+</tr>
+
+<tr>
+<td><b>Last Name</td>
+<td><input type="text" size="32" maxlength="32" name="lname"></td>
+</tr>
+
+<tr>
+<td><b>Age</td>
+<td><input id="x" type="text" size="10" maxlength="3" onChange="agefunction()"> 
+<br> <p id="errorMsg"> </p></td>
+</tr>
+
+<tr>
+<td align="left"><b>Email</td>
+<td><input id="e" type="text" size="32" maxlength="32" onChange="emailfunction()">
+<br> <p id="errorMsgg"> </p></td>
+</tr>
+
+<tr>
+<td><b>Favorite Character</td>
+<td><input type="text" size="32" maxlength="32" name="char"> </td>
+</tr>
+
+<tr>
+<td><b>Comment on the Website</td>
+<td><textarea cols="30" rows="6"></textarea></td>
+</tr>
+
+<tr>
+<td><b>Suggestions for improvements</td>
+<td><textarea cols="30" rows="6"></textarea>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr bgcolor="#FFCC66">
+<td colspan="2">
+
+<input type="submit" value="Submit">
+<input type="reset" value="Cancel">              
+
+	</form>
+
+</td>
+</tr>
+
+    </table>
+</body></html>

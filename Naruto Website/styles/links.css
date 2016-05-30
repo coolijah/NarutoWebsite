@@ -1,0 +1,47 @@
+a.back:link { color:blue;
+	   font-style:italic;
+	   text-decoration:none;
+	   font-size:17px; }
+
+a.back:visited { color:blue;
+	   font-style:italic;
+	   text-decoration:none;
+	   font-size:17px; }
+
+a.back:hover  { color:blue;
+	   font-style:italic;
+	   text-decoration:underline;
+	   font-size:17px;
+	   font-weight:bold; }
+
+a.hyper:link { color:blue;
+	   text-decoration:none;
+	   font-size:17px;}
+
+a.hyper:visited { color:blue;
+	   text-decoration:none;
+	   font-size:17px;}
+
+a.hyper:hover  { color:blue;
+	   text-decoration:underline;
+	   font-size:17px;
+	   font-weight:bold; }
+
+a.cmenu:link { color:black;
+	   text-decoration:none;
+	   font-size:15px;
+	   font-family:arial;}
+
+a.cmenu:visited { color:black;
+	   text-decoration:none;
+	   font-size:15px;
+	   font-family:arial;}
+
+a.cmenu:hover  { color:blue;
+	   text-decoration:none;
+	   font-size:15px;
+	   font-weight:bold;
+	   font-family:arial; }
+
+a.pics { color:black; }
+a.pics:hover { color:blue; }
